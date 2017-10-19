@@ -1,0 +1,110 @@
+@charset "UTF-8";
+body, html {
+  font-style: "Microsoft Yahei", "微软雅黑";
+  width: 100%;
+  height: 100%; }
+
+html, body {
+  margin: 0;
+  color: #6c6c6c;
+  font: 13px/21px "微软雅黑"; }
+
+dd, dl, dt, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, ul {
+  margin: 0;
+  padding: 0; }
+
+fieldset, img {
+  border: none; }
+
+li {
+  list-style: none; }
+
+img, input, select {
+  vertical-align: middle; }
+
+input, select, textarea {
+  font-size: 13px; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+div, dl, ul {
+  zoom: 1; }
+
+div:after, dl:after, ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0; }
+
+/*
+img {
+   @include transform(scale(1) rotate(0deg) translate3d(0,0,0));
+ }*/
+body {
+  background: url(images/bg-01.jpg) top center no-repeat;
+  background-size: cover;
+  font-family: "Microsoft Yahei", "微软雅黑";
+  color: #000; }
+
+#countdown-box {
+  width: 420px;
+  margin: auto; }
+
+.countdown-list > li {
+  width: 420px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9); }
+
+.counter {
+  width: 400px;
+  height: 70px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 10px; }
+
+.counter > li {
+  width: 56px;
+  height: 70px;
+  float: left;
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px; }
+  .counter > li:after {
+    height: 20px;
+    width: 56px;
+    font-size: 12px;
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    line-height: 20px; }
+
+.Years:after {
+  content: "Years"; }
+
+.Months:after {
+  content: "Months"; }
+
+.Weeks:after {
+  content: "Weeks"; }
+
+.Days:after {
+  content: "Days"; }
+
+.Hours:after {
+  content: "Hours"; }
+
+.Minutes:after {
+  content: "Minutes"; }
+
+.Seconds:after {
+  content: "Seconds"; }
+
+/*# sourceMappingURL=countdown.css.map */

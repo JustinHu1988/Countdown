@@ -3,11 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Countdown timer</title>
+    <meta name="viewport" content="width=480, user-scalable=no">
+    <link rel="stylesheet" href="countdown.css">
 </head>
 <body>
+<div id="countdown-box">
+    <div class="change-base">
+        <ul class="tab">
+            <li class="Years">99</li>
+            <li class="Months">99</li>
+            <li class="Weeks">99</li>
+            <li class="Days">99</li>
+            <li class="Hours">99</li>
+            <li class="Minutes">99</li>
+            <li class="Seconds">99</li>
+        </ul>
+    </div>
+    <ul class="countdown-list">
+        <li>
+            <ul class="counter">
+                <li class="Years">99</li>
+                <li class="Months">99</li>
+                <li class="Weeks">99</li>
+                <li class="Days">99</li>
+                <li class="Hours">99</li>
+                <li class="Minutes">99</li>
+                <li class="Seconds">99</li>
+            </ul>
+        </li>
+    </ul>
+</div>
 
 
-
+<script>
+    let dateStrArr = [
+        ['2048-04-17','To Sixty'],
+        ['2028-04-17','To Forty'],
+        ['2018-04-17','To Thirty']
+    ];
+</script>
+<script src="countdown.js"></script>
 
 
 </body>

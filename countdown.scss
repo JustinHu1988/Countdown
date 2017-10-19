@@ -1,0 +1,75 @@
+@import "reset";
+
+body{
+  @include background(url(images/bg-01.jpg) top center no-repeat,cover);
+  font-family: "Microsoft Yahei", "微软雅黑";
+  color:#000;
+}
+
+
+#countdown-box{
+  width: 420px;
+  margin: auto;
+}
+
+.countdown-list{
+  >li{
+    width: 420px;
+    height:100px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.9);
+  }
+
+
+}
+.counter{
+  width:400px;
+  height: 70px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 10px;
+}
+.counter > li{
+  width:56px;
+  height:70px;
+  float: left;
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+
+  &:after{
+    height:20px;
+    width:56px;
+    font-size:12px;
+    color:#000;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    text-align: center;
+    line-height: 20px;
+
+
+  }
+}
+.Years:after{
+  content:"Years";
+}
+.Months:after{
+  content:"Months";
+}
+.Weeks:after{
+  content:"Weeks";
+}
+.Days:after{
+  content:"Days";
+}
+.Hours:after{
+  content:"Hours";
+}
+.Minutes:after{
+  content:"Minutes";
+}
+.Seconds:after{
+  content:"Seconds";
+}
