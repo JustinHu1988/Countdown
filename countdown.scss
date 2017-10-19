@@ -12,12 +12,13 @@ body{
   margin: auto;
 }
 
-.countdown-list{
+#countdown-list{
   >li{
     width: 420px;
     height:100px;
     border-radius: 10px;
     background-color: rgba(255,255,255,0.9);
+    margin-bottom: 20px;
   }
 
 
@@ -35,8 +36,14 @@ body{
   float: left;
   position: relative;
   font-size: 30px;
-  text-align: center;
+  text-align: right;
   line-height: 50px;
+  >p{
+    width:400px;
+    position: absolute;
+    right: 0;
+    top:0;
+  }
 
   &:after{
     height:20px;
@@ -46,7 +53,7 @@ body{
     position: absolute;
     bottom:0;
     left: 0;
-    text-align: center;
+    text-align: right;
     line-height: 20px;
 
 
